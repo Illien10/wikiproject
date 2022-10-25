@@ -11,7 +11,10 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 240, 127);
+    background-color: rgb(143, 142, 142);
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 20px;
 
 }
 
@@ -73,4 +76,21 @@ body{
 .refresh-btn:hover{
     border-color: black;
     background-color: hsl(38, 100%, 80%);
+}
+.container01{
+    width: 800px;
+    max-width: 90%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0  10px 2px;
+}
+h3{
+    font-size: small;
+    font-weight: 200;
+}
+h4{
+    font-size: small;
+    font-weight: 200;
+    color: crimson;
 }

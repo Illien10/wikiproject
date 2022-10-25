@@ -93,7 +93,7 @@ const textNodes = [
             },
             {
                 text: "Correcto",
-                nextText: 201,
+                nextText: 202,
             },
         ]
     },
@@ -101,6 +101,18 @@ const textNodes = [
         id:102,
         text:"Le diste a cierto"
     },
+    {
+      id:301,
+      text:"Vienes de la Opción 3"
+  },
+  {
+    id:401,
+    text:"Vienes de la Opción 4"
+},
+{
+  id:202,
+  text:"Le diste a correcto"
+},
 
     
 ]
