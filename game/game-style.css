@@ -94,3 +94,13 @@ h4{
     font-weight: 200;
     color: crimson;
 }
+.transparent-phone-container{
+    display: grid;
+    margin-top: 10px;
+    
+}
+.Instagram{
+    margin-left: 200px;
+    transform: scale(0.35,0.35);
+    display: block;
+}

@@ -1,12 +1,15 @@
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
 const refreshButtonElement = document.getElementById('refresh-btn')
-let state = {}
+
+const instaImage = document.getElementById('instagram')
+
 
 function startGame() {
   state = {}
   showTextNode(1)
   refreshButtonElement.addEventListener('click',()=> startGame())
+  
 }
 
 
@@ -37,6 +40,8 @@ function selectOption(option) {
   if (nextTextNodeId <= 0) {
     return startGame()
   }
+  
+  
   state = Object.assign(state, option.setState)
   showTextNode(nextTextNodeId)
 }
@@ -48,9 +53,11 @@ const textNodes = [
         options:[
             {
 
-            text: "Opción 1",
-            setState: {luz : true},
+            text: "Instagram",
             nextText: 2,
+            
+            
+            
             },
             {
                 text: "Opción 2",
@@ -71,7 +78,7 @@ const textNodes = [
     },
     {
         id:2,
-        text:"Vienes de la Opción 1",
+        text:"Le diste a Instagram",
         options:[
             {
                 text:"Sí",
