@@ -1,12 +1,14 @@
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
-
+const refreshButtonElement = document.getElementById('refresh-btn')
 let state = {}
 
 function startGame() {
   state = {}
   showTextNode(1)
+  refreshButtonElement.addEventListener('click',()=> startGame())
 }
+
 
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
@@ -42,24 +44,25 @@ function selectOption(option) {
 const textNodes = [
     {
         id:1,
-        text: "Amaneces en una cama extraña todo está a oscuras y tienes las manos esposadas, atisbas un interruptor de luz a la par que escuchas pasos acercándose",
+        text: "Comienzo de un juego de elecciones con intención de tratar el tema de la identidad Digital",
         options:[
             {
 
-            text: "Enciendes el interruptor",
+            text: "Opción 1",
             setState: {luz : true},
             nextText: 2,
             },
             {
-                text: "Esperas en silencio",
-                nextText: 101 ,
+                text: "Opción 2",
+                nextText: 201 ,
                 
             },
             {
-              text: "Prueba grid"
-            },
+              text: "Opción 3",
+              nextText: 301 ,           },
             {
-              text: "Prueba Grid"
+              text: "Opción 4",
+              nextText:401,
             },
 
 
@@ -68,35 +71,35 @@ const textNodes = [
     },
     {
         id:2,
-        text:"Aparece Carlos haciendo el baile de la lluvia y te pide que te unas a el o si no te degollará",
+        text:"Vienes de la Opción 1",
         options:[
             {
-                text:"Acepto",
+                text:"Sí",
                 nextText:3,
             },
             {
-                text:"Me río a carcajadas",
-                nextText: 3,
+                text:"También",
+                nextText: 4,
             },
         ]
     },
     {
-        id:101,
-        text:"Aparece Carlos sigiloso, sientes como se mueve al ritmo de la lluvia y te susurra algo al oído",
+        id:201,
+        text:"Vienes de la Opción 2",
         options:[
             {
-                text:"te estremeces con miedo",
+                text:"Cierto",
                 nextText:102,
             },
             {
-                text: "te estremeces de gustito",
+                text: "Correcto",
                 nextText: 201,
             },
         ]
     },
     {
         id:102,
-        text:"Te dice que te va a obligar a ver los 1034 capítulos de OnePiece"
+        text:"Le diste a cierto"
     },
 
     
