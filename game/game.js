@@ -49,7 +49,7 @@ function selectOption(option) {
 const textNodes = [
     {
         id:1,
-        text: "Comienzo de un juego de elecciones con intención de tratar el tema de la identidad Digital",
+        text: "Comienzo de un juego de elecciones para elaborar nuestro PLE",
         options:[
             {
 

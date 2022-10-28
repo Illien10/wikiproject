@@ -1,0 +1,80 @@
+body{
+    background-color: aqua;
+    display: grid;
+    justify-content: center;
+}
+section{
+    background-color: white;
+    padding: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+div{
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+#Personajes{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    width: 90vw;
+    height: 40vh;
+    justify-content: center;
+    background-color: transparent;
+    
+
+}
+#Personaje1{
+    background-image: url("../assets/images/blobs/BlobRojo.png");
+    background-size: contain;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-color: transparent;
+    border: none;
+    
+
+
+}
+#Personaje2{
+    background-image: url("../assets/images/blobs/BlobAzul.png");
+    background-size: contain;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-color: transparent;
+    border: none;
+}
+#Personaje3{
+    background-image: url("../assets/images/blobs/BlobPurpura.png");
+    background-size: contain;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-color: transparent;
+    border: none;
+    
+}
+
+#Personaje1:hover{
+    transform: scale(1.2);
+
+}
+#Personaje2:hover{
+    transform: scale(1.2);
+
+}
+#Personaje3:hover{
+    transform: scale(1.2);
+
+}
+
+.search-header{
+color: blue;
+background-color: black;
+}
+.search-body{
+color: red;
+}
+
+h5{
+    color: red;
+    font-size: small;
+}
