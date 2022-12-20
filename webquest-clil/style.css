@@ -119,3 +119,8 @@ button::-moz-focus-inner {
 #solve:hover, #solve.gameSolved {
   opacity: 1;
 }
+#quiz{
+  position:absolute;
+  margin-top:800px ;
+  font-size: xx-large;
+}
