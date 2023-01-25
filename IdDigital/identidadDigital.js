@@ -50,12 +50,12 @@ const findingsNodes = [
         id:1,
         finding_options:[
             {
-            header: "/images/Instagram.png",
-            body: "/images/redimgs/redtakespicofbluenature.png",
+            header: "/wikiproject/images/Instagram.png",
+            body: "/wikiproject/images/redimgs/redtakespicofbluenature.png",
             },
             {
-                header: "/images/Instagram.png",
-                body: "/images/pinkguitar.png",
+                header: "/wikiproject/images/Instagram.png",
+                body: "/wikiproject/images/pinkguitar.png",
                 },
 
         ],
@@ -64,16 +64,16 @@ const findingsNodes = [
         id:2,
         finding_options:[
             {
-                header:"/images/Instagram.png",
-                body:"/images/blueimgs/bluecomputer.png",
+                header:"/wikiproject/images/Instagram.png",
+                body:"/wikiproject/images/blueimgs/bluecomputer.png",
             },
             {
-                header:"/images/Instagram.png",
-                body:"/images/blueimgs/blueGaming.png",
+                header:"/wikiproject/images/Instagram.png",
+                body:"/wikiproject/images/blueimgs/blueGaming.png",
             },
             {
-                header:"/images/Instagram.png",
-                body:"/images/blueimgs/blueskating.png",
+                header:"/wikiproject/images/Instagram.png",
+                body:"/wikiproject/images/blueimgs/blueskating.png",
             },
         ],
     },
@@ -81,12 +81,12 @@ const findingsNodes = [
         id:3,
         finding_options:[
             {
-                header:"/images/Instagram.png",
-                body:"/images/sin-fotos.png",
+                header:"/wikiproject/images/Instagram.png",
+                body:"/wikiproject/images/sin-fotos.png",
             },
             {
-                header:"/images/Instagram.png",
-                body:"/images/sin-fotos.png",
+                header:"/wikiproject/images/Instagram.png",
+                body:"/wikiproject/images/sin-fotos.png",
             },
 
 
