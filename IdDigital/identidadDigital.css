@@ -23,7 +23,7 @@ section{
 
 }
 #Personaje1{
-    background-image: url("../wikiproject/images/blobs/BlobRojo.png");
+    background-image: "../wikiproject/images/blobs/BlobRojo.png";
     background-size: contain;                      /* <------ */
     background-repeat:   no-repeat;
     background-color: transparent;
@@ -33,14 +33,14 @@ section{
 
 }
 #Personaje2{
-    background-image: url("/wikiproject/images/blobs/BlobAzul.png");
+    background-image: "wikiproject/images/blobs/BlobAzul.png";
     background-size: contain;                      /* <------ */
     background-repeat:   no-repeat;
     background-color: transparent;
     border: none;
 }
 #Personaje3{
-    background-image: url("/wikiproject/images/blobs/BlobPurpura.png");
+    background-image: "/wikiproject/images/blobs/BlobPurpura.png";
     background-size: contain;                      /* <------ */
     background-repeat:   no-repeat;
     background-color: transparent;
