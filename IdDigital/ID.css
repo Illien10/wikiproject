@@ -1,0 +1,202 @@
+#Personajes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    }
+    
+    #Personaje1, #Personaje2, #Personaje3 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    #Personaje1 {
+    background-image: url("/images/blobs/BlobRojo.png");
+    }
+    
+    #Personaje2 {
+    background-image: url("/images/blobs/BlobAzul.png");
+    }
+    
+    #Personaje3 {
+    background-image: url("/images/blobs/BlobPurpura.png");
+    }
+    
+    #Personaje1:hover, #Personaje2:hover, #Personaje3:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    }
+    
+    @media only screen and (max-width: 600px) {
+    #Personaje1, #Personaje2, #Personaje3 {
+    width: 150px;
+    height: 150px;
+    }
+    }
+    
+    .search-header{
+    color: #2C3E50;
+    background-color: #34495E;
+    }
+    .search-body{
+    color: #E74C3C;
+    }
+    
+    h5{
+    color: #E74C3C;
+    font-size: small;
+    }
+    
+    .search-wrapper {
+        width: 90%;
+        
+        margin: 2em auto;
+        
+        padding: 2em;
+        border-radius: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        }
+        
+        .container {
+        width: 90%;
+        max-width: 600px;
+        margin: 2em auto;
+        
+        padding: 2em;
+        border-radius: 1em;
+        text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+        .search-wrapper, .container {
+        width: 100%;
+        }
+        }
+        
+        /* Add some spacing between each finding */
+        .search-wrapper > div {
+        margin-bottom: 2em;
+        }
+        
+        /* Add some spacing between icon and picture in container */
+        .container .icon + .picture {
+        margin-left: 1em;
+        }
+        
+        .icon{
+        width: 10vw;
+        display: block;
+        padding: 1em;
+        padding-left: 7em;
+        background-color: transparent;
+        }
+        .picture{
+        width: 40vw;
+        padding: 3em;
+        background-color: transparent;
+        border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+        }
+    
+    .btn-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:0.2em;
+    margin-top: 2em;
+    margin-right: 1em;
+    }
+    
+    .btn{
+    background-color: #16A085;
+    border: 0.1em solid #1ABC9C;
+    border-radius: 2em;
+    padding: 2.5em 5em;
+    color: white;
+    outline: none;
+    }
+    
+    .btn:hover{
+    border-color: black;
+    background-color: #2ECC71;
+    cursor: pointer;
+    }
+    
+    
+    .refresh-btn {
+        background-color: #ff5722;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 1rem;
+        transition: all 0.2s ease-in-out;
+        margin: 1em auto;
+        display: block;
+        }
+        
+        .refresh-btn:hover {
+        background-color: #f44336;
+        cursor: pointer;
+        }
+        
+        .refresh-btn:active {
+        transform: scale(0.95);
+        }
+        
+        .refresh-button-container {
+        width: 90vw;
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        }
+        .refresh-btn {
+        background-color: hsl(38, 100%, 50%);
+        border: 1px solid hsl(38, 100%, 30%);
+        border-radius: 2em;
+        padding: 10px 20px;
+        color: white;
+        outline: none;
+        }
+        .refresh-btn:hover{
+        border-color: black;
+        background-color: hsl(38, 100%, 80%);
+        }
+
+        .top-header{
+            margin-top: 3em;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        /*Accordion*/
+        @keyframes slide {
+            from {max-height: 0;}
+            to {max-height: 500px;}
+          }
+          .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            animation: slide 0.2s ease-out;
+          }
+          .show {
+            max-height: 500px;
+          }
+
+          .accordion-title:hover{
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+          }
+
+          .accordion-title{
+            background-color: rgba(170, 170, 170, 0.658);
+            font-size: 1.2em;
+          }

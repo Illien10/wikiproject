@@ -1,62 +1,49 @@
-I<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Projects-Grid-images.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    
-</head>
-
-<body>
-    <header></header>
-    <h1>Wiki Portfolio EAED</h1>
-    <div class="container py-4 py-xl-5" style="margin-top: 0px;margin-right: 12.5px;margin-left: 26.5px;">
-        <div class="row mb-5">
-            <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h2>Proyectos por tema</h2>
-                <p class="w-lg-50">(Página en construcción)</p>
-            </div>
-        </div>
-        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-            <div class="col">
-                <div><a href="IdDigital/identidadDigital.html"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="./assets/images/blobs/alltogether.png"></a>
-                    <div class="py-4">
-                        <h4><a href="IdDigital/identidadDigital.html"> Identidad Digital</a></h4>
-                        <p>Diversos recursos que trabajan sobre el concepto de Identidad Digital</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div class="py-4">
-                        <h4><a href="game/game.html">PLE</a></h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div class="py-4">
-                        <h4>Lorem libero donec</h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div class="py-4">
-                        <h4>Lorem libero donec</h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>EAED</title>
+  </head>
+  <body>
+    <header>
+        <h1>Experiencias de Aprendizaje en la Era Digital</h1>
+        <p>Portfolio de Carlos González González</p>
+      </header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#project1">Identidad Digital</a></li>
+        <li><a href="#project2">PLE</a></li>
+        <li><a href="#project3">Project 3</a></li>
+        <li><a href="#project4">Project 4</a></li>
+        <li><a href="#project5">Project 5</a></li>
+      </ul>
+    </nav>
+    <div id="project1" class="project-section">
+      <h2>Identidad Digital</h2>
+      <a href="/IdDigital/identidadDigital.html"><img class="project-image" src="images/blobs/alltogether.png" alt="Project 1 Image"></a>
+      <p>Descubre la realidad que supone nuestra presencia en las redes, 
+        aún sin nuestro conocimiento.</p>
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+    <div id="project2" class="project-section">
+      <h2>PLE</h2>
+      <a href="/ple2/ple.html"><img class="project-image" src="images/Pie Chart.png" alt="Project 2 Image"></a>
+      <p>PLE</p>
+    </div>
+    <div id="project3" class="project-section">
+      <h2>Realidad Aumentada</h2>
+      <a href="/AR/AR.html"><img class="project-image" src="images/animalcell.png" alt="Realidad Aumentada"></a>
+      <p>Realidad Aumentada</p>
+    </div>
+    <div id="project4" class="project-section">
+      <h2>Realidad Virtual</h2>
+      <a href="/VR/VR.html"><img class="project-image" src="project4.jpg" alt="Realidad Virtual"></a>
+      <p>Realidad Virtual</p>
+    </div>
+    <div id="project5" class="project-section">
+      <h2>Competencia Digital Docente</h2>
+      <img class="project-image" src="project5.jpg" alt="Project 5 Image">
+      <p>Competencia Digital Docente</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

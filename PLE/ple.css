@@ -1,0 +1,45 @@
+/* Some basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .checkbox-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Styling for the custom checkboxes */
+  .custom-checkbox {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling for the checkbox and labels */
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  /* Styling for the gradients */
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  /* Media query for responsive styling */
+  @media only screen and (max-width: 600px) {
+    .checkbox-container, .custom-checkbox {
+      flex-wrap: wrap;
+    }
+  }

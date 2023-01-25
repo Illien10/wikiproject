@@ -2,6 +2,12 @@ const search_wrapper = document.getElementById('search-wrapper')
 const redButton = document.getElementById('Personaje1')
 const blueButton = document.getElementById('Personaje2')
 const pinkButton = document.getElementById('Personaje3')
+const accordionTitle = document.querySelector('.accordion-title');
+const accordionContent = document.querySelector('.accordion-content');
+
+accordionTitle.addEventListener('click', function() {
+  accordionContent.classList.toggle('show');
+});
 
 
 function startGame (){
@@ -21,15 +27,15 @@ const node = findingsNodes.find(node => node.id === index)
 
 node.finding_options.forEach(finding_option=> {
     const findingsreal = document.createElement('div')
-    const header = document.createElement('div')
-    header.className= "search-header"
-    header.textContent=finding_option.header
+    const icon = document.createElement("img")
+    icon.className= "icon"
+    icon.src=finding_option.header
 
-    const body = document.createElement('div')
-    body.className= "search-body"
-    body.textContent=finding_option.body
+    const body = document.createElement('img')
+    body.className= "picture"
+    body.src=finding_option.body
    
-    findingsreal.appendChild(header)
+    findingsreal.appendChild(icon)
     findingsreal.appendChild(body)
     
     
@@ -44,13 +50,13 @@ const findingsNodes = [
         id:1,
         finding_options:[
             {
-            header: "Red Blob Instagram",
-            body: "redBlob photos",
+            header: "/images/Instagram.png",
+            body: "/images/redimgs/redtakespicofbluenature.png",
             },
             {
-                header:"Red Blob Facebook",
-                body:"facebook photos red",
-            },
+                header: "/images/Instagram.png",
+                body: "/images/pinkguitar.png",
+                },
 
         ],
     },
@@ -58,8 +64,16 @@ const findingsNodes = [
         id:2,
         finding_options:[
             {
-                header:"blue",
-                body:"bluephotos",
+                header:"/images/Instagram.png",
+                body:"/images/blueimgs/bluecomputer.png",
+            },
+            {
+                header:"/images/Instagram.png",
+                body:"/images/blueimgs/blueGaming.png",
+            },
+            {
+                header:"/images/Instagram.png",
+                body:"/images/blueimgs/blueskating.png",
             },
         ],
     },
@@ -67,16 +81,17 @@ const findingsNodes = [
         id:3,
         finding_options:[
             {
-                header:"Pink Instagram",
-                body:"Pink Instagram's Photos",
+                header:"/images/Instagram.png",
+                body:"/images/sin-fotos.png",
             },
             {
-                header:'Pinks Facebook',
-                body:"pink's Facebook Photos",
+                header:"/images/Instagram.png",
+                body:"/images/sin-fotos.png",
             },
 
 
         ]
     },
 ]
+
 startGame()

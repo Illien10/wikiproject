@@ -11,12 +11,7 @@ section{
     border-radius: 20px;
 }
 
-div{
-    background-color: white;
-    padding: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
+
 #Personajes{
     display: grid;
     grid-template-columns: 30vw 30vw 30vw;
@@ -28,7 +23,7 @@ div{
 
 }
 #Personaje1{
-    background-image: url("../assets/images/blobs/BlobRojo.png");
+    background-image: url("../images/blobs/BlobRojo.png");
     background-size: contain;                      /* <------ */
     background-repeat:   no-repeat;
     background-color: transparent;
@@ -38,14 +33,14 @@ div{
 
 }
 #Personaje2{
-    background-image: url("../assets/images/blobs/BlobAzul.png");
+    background-image: url("../images/blobs/BlobAzul.png");
     background-size: contain;                      /* <------ */
     background-repeat:   no-repeat;
     background-color: transparent;
     border: none;
 }
 #Personaje3{
-    background-image: url("../assets/images/blobs/BlobPurpura.png");
+    background-image: url("../images/blobs/BlobPurpura.png");
     background-size: contain;                      /* <------ */
     background-repeat:   no-repeat;
     background-color: transparent;
@@ -78,3 +73,98 @@ h5{
     color: red;
     font-size: small;
 }
+
+.icon{
+    width: 10vw;
+    display: block;
+    padding: 1em;
+    padding-left: 12em;
+    background-color: transparent;
+}
+.picture{
+    width: 40vw;
+    padding: 3em;
+    background-color: transparent;
+    
+}
+.search-wrapper{
+    background-color: rgba(247, 247, 247, 0.836);
+    padding: 0.1em;
+    justify-content: center;
+    margin-top: 2em;
+    border-radius: 4em;
+}
+
+
+.container{
+    background-color: rgba(247, 247, 247, 0.836);
+    padding: 0.1em;
+    justify-content: center;
+    margin-top: 1em;
+    border-radius: 1em;
+    text-align: center;
+
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;   
+    
+    gap:0.2em;
+
+    margin-top: 2em;
+    margin-right: 1em;
+    
+    
+}
+
+.btn{
+
+    background-color: hsl(210, 100%, 50%);
+    border: 0.1em solid hsl(210, 100%, 30%);
+    border-radius: 2em;
+    padding: 2.5em 5em;
+    color: white;
+    outline: none;
+   
+}
+
+.btn:hover{
+    border-color: black;
+    background-color: hsl(200, 100%, 80%);
+}
+.refresh-button-container{
+    width: 90vw;
+    
+    
+    margin-top: 1em;   
+    display: grid;
+    
+}
+.refresh-btn{
+
+    background-color: hsl(38, 100%, 50%);
+    border: 1px solid hsl(38, 100%, 30%);
+    border-radius: 2em;
+    padding: 10px 20px;
+    color: white;
+    outline: none;
+   
+}
+.refresh-btn:hover{
+    border-color: black;
+    background-color: hsl(38, 100%, 80%);
+}
+.container01{
+    width: 800px;
+    max-width: 90%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0  10px 2px;}
+    #text{
+        justify-content: center;
+        font-weight: bolder;
+        font-size: larger;
+    }
+    
