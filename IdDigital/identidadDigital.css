@@ -23,7 +23,7 @@ section{
 
 }
 #Personaje1{
-    background-image: "/wikiproject/images/blobs/BlobRojo.png";
+    background-image: "./images/blobs/BlobRojo.png";
     background-size: contain;                      /* <------ */
     background-repeat:   no-repeat;
     background-color: transparent;
